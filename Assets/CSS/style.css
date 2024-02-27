@@ -1,0 +1,129 @@
+:root {
+  --primary-color: rgb(28, 44, 91);
+  --light-primary: rgb(108, 171, 221);
+  --bright-primary: rgb(158, 211, 255);
+  --red: rgb(236, 51, 37);
+  --light-red: rgb(255, 0, 0);
+  --gold: rgb(255, 198, 89);
+  --dark-gold: rgb(212, 161, 42);
+  --white-color: #fff;
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background: var(--primary-color);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: var(--light-primary);
+  color: var(--white-color);
+  max-width: 64rem;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+div {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-tarefa {
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 2.4rem;
+  height: 4rem;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.input-tarefa:focus {
+  outline: 0.3rem solid var(--primary-color);
+}
+
+input-tarefa:hover {
+  outline: 0.4rem solid var(--primary-color);
+}
+
+.btn-tarefa {
+  margin-top: 1.5rem;
+}
+
+button {
+  border: none;
+  background: var(--bright-primary);
+  color: var(--white-color);
+  font-size: 2.4rem;
+  height: 4rem;
+  width: 25%;
+  border-radius: 1rem;
+}
+
+button:hover {
+  outline: 0.3rem solid var(--primary-color);
+}
+
+ul {
+  flex-direction: column;
+}
+
+li {
+  border-radius: 1rem;
+  background-color: rgba(158, 211, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 0.5rem;
+  align-items: center;
+  overflow-y: auto;
+}
+
+li:hover {
+  outline: 0.2rem solid var(--bright-primary);
+}
+
+li button {
+  background-color: var(--red);
+  width: 18.5%;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+li button:hover {
+  background-color: var(--light-red);
+}
+
+.ckbox {
+   display: none;
+} 
+
+.checked {
+  background-color: var(--primary-color);
+  text-decoration: line-through;
+}
+
+.checked button{
+  display: none;
+}
+
+@media (max-width: 500px){
+  button.btn-apaga {
+    font-size: 1.4rem;
+  }
+} 
